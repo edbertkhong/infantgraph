@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=1024">
+      <title>Graph</title>
+		  <link rel="stylesheet" href="css/graph.css">
+   </head>
+
+   <body>
+      <div id="wrapper">
+<!-- Create 2 tables, try to pull all relevant data -->
+         <div class="chart">
+            <h3>Infant height over the first two years of life</h3>
+            <table id="user-data" border="1" cellpadding="10" cellspacing="0"
+            summary="Tracking infant growth">
+               <caption>Height in cm</caption>
+               <thead>
+                  <tr>
+                     <td>&nbsp;</td>
+                     <th scope="col">0</th>
+                     <th scope="col">1</th>
+                     <th scope="col">2</th>
+                     <th scope="col">3</th>
+                     <th scope="col">4</th>
+                     <th scope="col">5</th>
+                     <th scope='col'>6</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr id="Height" class="Height">
+                     <th scope="row">Height</th>
+                     <td>49.9</td>
+                     <td>54.7</td>
+                     <td>58.4</td>
+                     <td>61.45</td>
+                     <td>63.9</td>
+                     <td>65.9</td>
+                     <td>67.6</td>
+                  </tr>
+                  <tr id="Weight" class="Weight">
+                     <th scope="row">Weight</th>
+                     <td>4.7</td>
+                     <td>5.2</td>
+                     <td>5.9</td>
+                     <td>6.6</td>
+                     <td>7.0</td>
+                     <td>7.3</td>
+                     <td>7.9</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+      <!--<div id="placeholder"></div>-->
+      <div id="content">
+
+    		<div class="demo-container">
+    			<div id="placeholder" class="demo-placeholder"></div>
+    		</div>
+
+		    <p><label><input id="enableTooltip" type="hidden" checked="checked"></input></label></p>
+        <button data-index="Height">Height</button>
+        <button data-index="Weight">Weight</button>
+	     </div>
+		  <!-- Grab jQuery from Google -->
+		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <!-- Get Flot-->
+      <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
+      <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.fillbetween.js"></script>
+      <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.axislabels.js"></script>
+      <script language="javascript" type="text/javascript" src="js/animator/jquery.flot.animator.min.js"></script>
+      <!-- Graph JavaScript-->
+      <script src="js/graph.js"></script>
+
+   </body>
+</html>
